@@ -1,0 +1,212 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(wallhaven-k7v9yq_3840x3072.png);
+}
+.navbar{
+    padding:35px 0;
+    margin:auto;
+    width:85%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo-top{
+    cursor:pointer;
+    font-size:24px;
+    color:#fff;
+}
+
+.list-item{
+    display:inline-block;
+    list-style:none;
+    margin:0 10px;
+    position:relative;
+    
+}
+.list-item a{
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;
+
+}
+.list-item::after{
+    content:'';
+    left:0;
+    bottom:-10px;
+    height:3px;
+    position:absolute;
+    background-color:#009688;
+    width:0%;
+    transition: 0.5s ease;
+}
+.list-item:hover::after{
+    
+    width:100%;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:50%;
+    text-align:center;
+    color:#fff;
+    transform: translateY(-50%);
+}
+.content h2{
+    font-size:60px;
+}
+.content p {
+     margin-top:20px;
+     font-size:26px;
+}
+.button-main{
+    padding: 10px 30px;
+    margin: 10px 40px;
+    width: 150px;
+    text-align: center;
+    background-color:transparent;
+    border:3px solid #009688;
+    border-radius:25px;
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:bold;
+    position: relative;
+    overflow: hidden;
+}
+.hover-effect{
+    background-color:#009688;
+    position:absolute;
+    width:0%;
+    height:100%;
+    left:0;
+    bottom:0;
+    border-radius:25px;
+    z-index:-1;
+    transition: 0.5s ease;
+
+}
+.button-main:hover .hover-effect{
+    width:100%;
+}
+.button-main:hover{
+    border:none;   
+}
+.container2{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    background:linear-gradient(#0f4675,#0f4675 50%,#fff 50%, #fff 100%);
+}
+.container{
+    width:1100px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.container .box{
+    position:relative;
+    width:320px;
+    padding: 100px 40px 60px;
+    background:#fff;
+    box-shadow: 0 15px 45px rgba(0,0,0,.1);
+}
+.container .box:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#ff226d;
+    transform:scaleY(0);
+    transform-origin:top;
+    transition :transform 0.5s;
+}
+.container .box:hover:before{
+    transform:scaleY(1);
+    transform-origin:bottom;
+    transition :transform 0.5s;
+}
+.container .box h2 
+{
+    position:absolute;
+    left:40px;
+    top:60px;
+    font-size:4em;
+    font-weight:800;
+    z-index:1;
+    opacity:0.5;
+    transition: 0.5s;
+}
+.container .box:hover h2 
+{
+    opacity:1;
+    color:#fff;
+    transform:translateY(-40px);
+}
+.container .box:hover h3{
+    position:relative;
+    font-size:1.5em;
+    z-index:2;
+    color:#fff;
+}
+.container .box:hover p{
+    z-index:3;
+    position:relative;
+    color:#fff;
+}
+.container3{
+    width:100%;
+    height:100vh;
+    background-color:aliceblue;
+    position:relative; 
+}
+.contact-box{
+    width:500px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:#fff;
+    position:absolute;
+}
+form{
+    margin:35px;
+
+}
+.ipnut-field{
+    width:400px;
+    height:40px;
+    margin-top:20px;
+    padding-left:20px;
+    border:1px solid #000;
+    outline:none;
+    border-radius:10px;
+}
+.ipnut-area{
+    margin-top:10px;
+    height:150px;
+    padding-top:10px;
+    width:400px;
+    padding-left:20px;
+    border:1px solid #000;
+    outline:none;
+    border-radius:10px;
+}
+.submit-btn{
+    margin-top:10px;
+    width:100px;
+    padding:10px 5px;
+    border-radius:15px;
+    background-color:#009688;
+    color:#fff;
+    border:#009688;
+}
